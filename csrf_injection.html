@@ -1,0 +1,38 @@
+<html>
+ <body onload="document.forms['submit']">
+<form method="POST" action="https://wensta.com/my/password/update" accept-charset="UTF-8" class="form-horizontal" data-toggle="validator"><input name="_method" type="hidden" value="PUT"><input name="_token" type="hidden" value="ByvPWksxgV97TPwzSxAMbKxpS8rHO69gzbtLtbBz">
+    <div class="form-group">
+        <label for="current_password" class="col-sm-4 control-label">Current Password*</label>
+        <div class="col-md-8">
+            <input class="form-control" id="current_password" placeholder="Current Password" data-minlength="6" required name="current_password" type="password" value="">
+            <div class="help-block with-errors"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="password" class="col-sm-4 control-label">New Password*</label>
+        <div class="col-md-8">
+            <input class="form-control" id="password" placeholder="Password" data-minlength="6" required name="password" type="password" value="">
+            <div class="help-block with-errors"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="password_confirmation" class="col-sm-4 control-label">Confirm Password*</label>
+        <div class="col-md-8">
+            <input class="form-control" placeholder="Confirm Password" data-match="#password" required name="password_confirmation" type="password" value="" id="password_confirmation">
+            <div class="help-block with-errors"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-4">
+            <small class="help-block text-muted">* marked fields are required</small>
+        </div>
+        <div class="col-sm-8 text-right">
+            <input class="btn btn-primary" type="submit" value="Update" name="submit">
+        </div>
+    </div>
+</form>
+ </body>
+</html>
